@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Revisión Google Play - ServiGo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            color: #2196F3;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header .subtitle {
+            color: #666;
+            font-size: 1.2em;
+        }
+        
+        .credentials-box {
+            background: #e8f5e8;
+            border: 3px solid #4CAF50;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .credentials-box h2 {
+            color: #2E7D32;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .credential-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 5px solid #4CAF50;
+            font-family: 'Courier New', monospace;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #2196F3;
+            border-bottom: 3px solid #2196F3;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .step {
+            background: #f8f9fa;
+            border-left: 5px solid #2196F3;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .step h3 {
+            color: #1976D2;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .step-number {
+            background: #2196F3;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 4px solid #2196F3;
+        }
+        
+        .feature-card h4 {
+            color: #1976D2;
+            margin-bottom: 10px;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .warning h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .success {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .success h3 {
+            color: #155724;
+            margin-bottom: 10px;
+        }
+        
+        .screenshot-placeholder {
+            background: #e9ecef;
+            border: 2px dashed #6c757d;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            color: #6c757d;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .code {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-family: 'Courier New', monospace;
+            color: #d63384;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🚀 ServiGo</h1>
+            <p class="subtitle">Guía de Revisión para Google Play Store</p>
+            <p><strong>Versión:</strong> 1.0.1 | <strong>Fecha:</strong> Septiembre 2024</p>
+        </div>
+
+        <!-- Credenciales especiales -->
+        <div class="credentials-box">
+            <h2>🔑 Credenciales de Prueba para Google Play Review</h2>
+            <p><strong>Use estas credenciales exactas para acceder a todas las funciones:</strong></p>
+            <div class="credential-item">
+                <strong>Email:</strong> googletest@servigo.app
+            </div>
+            <div class="credential-item">
+                <strong>Nombre:</strong> Google
+            </div>
+            <div class="credential-item">
+                <strong>Apellido:</strong> Test
+            </div>
+            <div class="credential-item">
+                <strong>Contraseña:</strong> googletestconsole
+            </div>
+        </div>
+
+        <!-- Información general -->
+        <div class="section">
+            <h2>📱 Información General</h2>
+            <p><strong>ServiGo</strong> es una plataforma que conecta usuarios con proveedores de servicios profesionales (plomeros, electricistas, jardineros, etc.) en Bolivia.</p>
+            
+            <div class="warning">
+                <h3>⚠️ Autenticación Obligatoria</h3>
+                <p>La aplicación requiere <strong>autenticación completa</strong> para acceder a todas las funciones. Esto garantiza la privacidad del usuario y la calidad del servicio.</p>
+            </div>
+        </div>
+
+        <!-- Proceso de revisión paso a paso -->
+        <div class="section">
+            <h2>🔍 Proceso de Revisión Paso a Paso</h2>
+            
+            <div class="step">
+                <h3><span class="step-number">1</span>Instalación y Primera Apertura</h3>
+                <ul>
+                    <li>Instale la aplicación desde el archivo AAB</li>
+                    <li>Abra la aplicación</li>
+                    <li>Verá la <span class="highlight">pantalla de carga (Splash)</span></li>
+                    <li>Automáticamente navegará a la <span class="highlight">pantalla de Bienvenida</span></li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3><span class="step-number">2</span>Pantalla de Bienvenida</h3>
+                <p>En la pantalla de bienvenida verá <strong>tres opciones</strong>:</p>
+                <ul>
+                    <li><span class="code">Crear Usuario</span> - Para usuarios que buscan servicios</li>
+                    <li><span class="code">Crear Proveedor</span> - Para proveedores de servicios</li>
+                    <li><span class="code">Iniciar Sesión</span> - Para usuarios existentes</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3><span class="step-number">3</span>Autenticación (RECOMENDADO)</h3>
+                <p><strong>Seleccione "Iniciar Sesión"</strong> e ingrese las credenciales de prueba:</p>
+                <div class="success">
+                    <ul>
+                        <li><strong>Email:</strong> <span class="code">googletest@servigo.app</span></li>
+                        <li><strong>Contraseña:</strong> <span class="code">googletestconsole</span></li>
+                    </ul>
+                    <p><strong>✅ Este usuario especial bypassa todas las verificaciones</strong> (email, teléfono, etc.)</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <h3><span class="step-number">4</span>Acceso a Funciones Principales</h3>
+                <p>Una vez autenticado, tendrá acceso completo a:</p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h4>🏠 Inicio</h4>
+                        <p>Servicios destacados y acceso rápido a categorías</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🔍 Buscar</h4>
+                        <p>Explorar proveedores por categoría y ubicación</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>📋 Categorías</h4>
+                        <p>Servicios organizados: plomería, electricidad, jardinería, etc.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>🗺️ Mapa</h4>
+                        <p>Visualización de proveedores en OpenStreetMap</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>👤 Perfil</h4>
+                        <p>Gestión de cuenta, historial y configuraciones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Funciones principales para probar -->
+        <div class="section">
+            <h2>🧪 Funciones Principales para Probar</h2>
+
+            <div class="step">
+                <h3>💬 Sistema de Mensajería Estructurada</h3>
+                <ul>
+                    <li>Vaya a <span class="code">Buscar</span> → Seleccione cualquier proveedor</li>
+                    <li>Presione <span class="code">Contactar</span></li>
+                    <li>Experimente el chat con <strong>opciones predefinidas</strong></li>
+                    <li>Pruebe <strong>compartir ubicación</strong></li>
+                    <li>Use el <strong>calendario integrado</strong> para agendar citas</li>
+                    <li>Complete el proceso con <strong>calificación de estrellas</strong></li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>🗺️ Funcionalidad de Mapas</h3>
+                <ul>
+                    <li>Vaya a la pestaña <span class="code">Mapa</span></li>
+                    <li>Otorgue permisos de ubicación cuando se solicite</li>
+                    <li>Vea proveedores cercanos en <strong>OpenStreetMap</strong></li>
+                    <li>Presione marcadores para ver información detallada</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h3>📱 Navegación y Permisos</h3>
+                <ul>
+                    <li><strong>Ubicación:</strong> Para mostrar servicios cercanos</li>
+                    <li><strong>Cámara:</strong> Para fotos de perfil (opcional)</li>
+                    <li><strong>Almacenamiento:</strong> Para datos de la aplicación</li>
+                    <li><strong>Internet:</strong> Para conectividad Firebase</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Características técnicas -->
+        <div class="section">
+            <h2>⚙️ Características Técnicas</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h4>🔐 Seguridad</h4>
+                    <ul>
+                        <li>Firebase Authentication</li>
+                        <li>Encriptación de datos</li>
+                        <li>Gestión segura de sesiones</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>🗺️ Mapas</h4>
+                    <ul>
+                        <li>OpenStreetMap (sin API key requerida)</li>
+                        <li>Geolocalización precisa</li>
+                        <li>Marcadores interactivos</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>💬 Comunicación</h4>
+                    <ul>
+                        <li>Chat en tiempo real</li>
+                        <li>Mensajes estructurados</li>
+                        <li>Notificaciones push</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <h4>🌍 Localización</h4>
+                    <ul>
+                        <li>Interfaz en español</li>
+                        <li>Mercado: América Latina</li>
+                        <li>Datos locales de Bolivia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Datos de prueba -->
+        <div class="section">
+            <h2>📊 Datos de Prueba Disponibles</h2>
+            <p>La aplicación incluye datos de demostración para facilitar las pruebas:</p>
+            <ul>
+                <li><strong>Proveedores ficticios</strong> en diferentes categorías</li>
+                <li><strong>Servicios de ejemplo:</strong> plomería, electricidad, jardinería, limpieza</li>
+                <li><strong>Calificaciones y reseñas</strong> de muestra</li>
+                <li><strong>Ubicaciones de prueba</strong> en Santa Cruz, Bolivia</li>
+                <li><strong>Conversaciones predefinidas</strong> para probar el chat</li>
+            </ul>
+        </div>
+
+        <!-- Flujo de prueba recomendado -->
+        <div class="section">
+            <h2>🎯 Flujo de Prueba Recomendado (5 minutos)</h2>
+            
+            <div class="step">
+                <h3>Minuto 1: Autenticación</h3>
+                <ol>
+                    <li>Abrir app → Bienvenida</li>
+                    <li>Seleccionar "Iniciar Sesión"</li>
+                    <li>Ingresar credenciales de prueba</li>
+                    <li>Verificar acceso exitoso</li>
+                </ol>
+            </div>
+
+            <div class="step">
+                <h3>Minuto 2-3: Exploración</h3>
+                <ol>
+                    <li>Navegar por todas las pestañas</li>
+                    <li>Explorar categorías de servicios</li>
+                    <li>Ver perfiles de proveedores</li>
+                    <li>Otorgar permisos de ubicación</li>
+                </ol>
+            </div>
+
+            <div class="step">
+                <h3>Minuto 4: Funcionalidad Principal</h3>
+                <ol>
+                    <li>Contactar un proveedor</li>
+                    <li>Probar chat estructurado</li>
+                    <li>Compartir ubicación (opcional)</li>
+                    <li>Verificar funcionamiento del mapa</li>
+                </ol>
+            </div>
+
+            <div class="step">
+                <h3>Minuto 5: Verificación Final</h3>
+                <ol>
+                    <li>Revisar perfil de usuario</li>
+                    <li>Verificar configuraciones</li>
+                    <li>Confirmar funcionamiento general</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Contacto y soporte -->
+        <div class="section">
+            <h2>📞 Contacto y Soporte</h2>
+            <p>Para cualquier consulta durante el proceso de revisión:</p>
+            <ul>
+                <li><strong>Email:</strong> support@servigo.app</li>
+                <li><strong>Desarrollador:</strong> Eric Ondazo</li>
+                <li><strong>Política de Privacidad:</strong> <a href="https://ericondazo.github.io/servigo-privacy-policy/" target="_blank">Ver aquí</a></li>
+            </ul>
+            
+            <div class="success">
+                <h3>✅ Confirmación de Funcionalidad</h3>
+                <p>Todas las funciones principales están <strong>completamente implementadas y funcionales</strong>. La aplicación está lista para ser distribuida en Google Play Store.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="section" style="text-align: center; background: #f8f9fa;">
+            <p><strong>ServiGo v1.0.1</strong> - Plataforma de Servicios Profesionales</p>
+            <p>© 2024 Eric Ondazo. Desarrollado para el mercado boliviano.</p>
+            <p><em>Guía actualizada: Septiembre 2024</em></p>
+        </div>
+    </div>
+</body>
+</html>
